@@ -38,27 +38,3 @@ button {
   background-color: pink;
 }
 
-/* 
- * On large displays show the ithub banner and adjust the size of the 
- * transcript display.
- */
-
-@media (min-device-width: 600px) {
-
-  header a {
-    display: block;
-    position: fixed;
-    top: 0;
-    right: 0;
-  }
-
-  body {
-    width: 600px;
-  }
-
-  body.with-annotations {
-    width: 800px;
-  }
-}
-
-}

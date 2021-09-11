@@ -1,5 +1,5 @@
 .webvtt-player .active {
-  background-color: #eee;
+  background-color: #ccc;
   border: 1px solid #ccc;
 }
 
@@ -8,17 +8,27 @@
 }
 
 .webvtt-player .line {
-  padding: 5px;
-  cursor: pointer;
+  text-align: left;
 }
 
 .webvtt-player .time {
-  width: 110px;
-  float: left;
-  font-size: 10pt;
-  line-height: 14pt;
+  text-align: left;
+}
+
+.webvtt-player .newline {
+  margin-bottom: 1em;
+  color: blue;
 }
 
 .webvtt-player .text {
-  margin-left: 110px;
+  color: red;
+}
+
+.webvtt-player .line p {
+  text-align: left;
+  display: block;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }

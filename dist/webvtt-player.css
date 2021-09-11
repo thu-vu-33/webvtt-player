@@ -1,28 +1,34 @@
-.webvtt-player .active {
-  background-color: #eee;
-  border: 1px solid #ccc;
-}
-
-.webvtt-player .match {
-  background-color: lightyellow;
-}
-
-.webvtt-player .line {
+.webvtt-player .point {
   padding: 5px;
+}
+
+.webvtt-player {
+  margin: 0 5em 0 5em;
+}
+
+.webvtt-player .title {
+  font-weight: bold;
+  font-size: inherit;
+  margin: 0;
   cursor: pointer;
 }
 
-.webvtt-player .time {
-  width: 110px;
-  float: left;
-  font-size: 10pt;
-  line-height: 14pt;
+.webvtt-player .titleAlt {
+  font-style: italic;
+  font-weight: normal;
+  font-size: inherit;
+  margin: 0;
 }
 
-.webvtt-player .text {
-  margin-left: 110px;
+.webvtt-player .field {
+  margin-top: 5px;
 }
-.webvtt-player .transcript {
+
+.webvtt-player .field span {
+  font-style: italic;
+}
+.webvtt-player .track {
+  flex: 6;
   height: 90vh;
   padding: 10px;
   overflow-y: scroll;
@@ -42,6 +48,9 @@
   background-color: #ccc;
 }
 
+.webvtt-player .tracks {
+  display: flex;
+}
 
 .webvtt-player .controls {
   padding: 5px;
@@ -54,28 +63,41 @@
   vertical-align: middle;
   width: 70%;
 }
-.search {
-  border-top: thin solid #ccc;
-  padding: 5px 5px 5px 5px;
-  font-size: 14pt;
-  margin-top: 5px;
+.webvtt-player .active {
+  background-color: #ccc;
+  border: 1px solid #ccc;
 }
 
-.search .container {
-  border: thin solid #ccc;
+.webvtt-player .match {
+  background-color: lightyellow;
 }
 
-.search input {
-  font-size: 12pt;
-  border: none;
-  width: 90%;
+.webvtt-player .line {
+  text-align: left;
 }
 
-.search input:focus {
-  outline: none;
+.webvtt-player .time {
+  text-align: left;
 }
 
-.search .icon {
-  padding-left: 5px;
-  padding-right: 5px;
+.webvtt-player .newline {
+  margin-bottom: 1em;
+  color: blue;
+}
+
+.webvtt-player .text {
+  color: red;
+}
+
+.webvtt-player .line p {
+  text-align: left;
+  display: block;
+  -webkit-margin-before: 0em;
+          margin-block-start: 0em;
+  -webkit-margin-after: 0em;
+          margin-block-end: 0em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
 }

@@ -23,14 +23,20 @@ class TranscriptLine extends React.Component {
     }
 
     // note: dangerouslySetInnerHTML is used because the text may contain HTML
+    console.log("#DEBUG value cue:", this.props.cue.text)
+    let langueage = this.props.cue.text.substring(0,4)
+    console.log("#DEBUG value language:", langueage)
+    let textStyle = 'text'
+    let content = this.props.cue.text
+    if (langueage == "[VI]") {
+      textStyle = 'newline'
+      content = content.substring(4)
+    }
     return (
       <div className={`${style} line`} onClick={this.onClick}>
-        <div className="time">
-          [{this.startTime()} - {this.endTime()}]
-        </div>
         <div
-          className={`${style} text`}
-          dangerouslySetInnerHTML={{__html: this.props.cue.text}} />
+          className={`${style} ${textStyle}`}
+          dangerouslySetInnerHTML={{__html: content}} />
       </div>
     )
   }

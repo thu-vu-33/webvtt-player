@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Transcript from './Transcript'
 import Metadata from './Metadata'
-import Search from './Search'
+// import Search from './Search'
 import './Player.css'
 
 class Player extends React.Component {
@@ -71,7 +71,7 @@ class Player extends React.Component {
               query={this.state.query} />
             {metadata}
           </div>
-          <Search query={this.state.query} updateQuery={this.updateQuery} />
+          {/* <Search query={this.state.query} updateQuery={this.updateQuery} /> */}
         </div>
       </div>
     )
