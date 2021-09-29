@@ -85,34 +85,11 @@
   font-family: charter, Georgia, Cambria, "Times New Roman", Times, serif;
   color: yellow;
 }
-.webvtt-player .point {
-  padding: 5px;
-}
-
-.webvtt-player {
-  margin: 0 5em 0 5em;
-}
-
-.webvtt-player .title {
-  font-weight: bold;
-  font-size: inherit;
-  margin: 0;
-  cursor: pointer;
-}
-
-.webvtt-player .titleAlt {
-  font-style: italic;
-  font-weight: normal;
-  font-size: inherit;
-  margin: 0;
-}
-
-.webvtt-player .field {
-  margin-top: 5px;
-}
-
-.webvtt-player .field span {
-  font-style: italic;
+.webvtt-player .track {
+  flex: 6;
+  height: 90vh;
+  padding: 10px;
+  overflow-y: scroll;
 }
 .webvtt-player .media {
   width: 100%;
@@ -144,9 +121,32 @@
   vertical-align: middle;
   width: 70%;
 }
-.webvtt-player .track {
-  flex: 6;
-  height: 90vh;
-  padding: 10px;
-  overflow-y: scroll;
+.webvtt-player .point {
+  padding: 5px;
+}
+
+.webvtt-player {
+  margin: 0 5em 0 5em;
+}
+
+.webvtt-player .title {
+  font-weight: bold;
+  font-size: inherit;
+  margin: 0;
+  cursor: pointer;
+}
+
+.webvtt-player .titleAlt {
+  font-style: italic;
+  font-weight: normal;
+  font-size: inherit;
+  margin: 0;
+}
+
+.webvtt-player .field {
+  margin-top: 5px;
+}
+
+.webvtt-player .field span {
+  font-style: italic;
 }
