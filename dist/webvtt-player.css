@@ -85,12 +85,6 @@
   font-family: charter, Georgia, Cambria, "Times New Roman", Times, serif;
   color: yellow;
 }
-.webvtt-player .track {
-  flex: 6;
-  height: 90vh;
-  padding: 10px;
-  overflow-y: scroll;
-}
 .webvtt-player .media {
   width: 100%;
   border: thin solid #ccc;
@@ -120,6 +114,12 @@
 .webvtt-player .seekBar {
   vertical-align: middle;
   width: 70%;
+}
+.webvtt-player .track {
+  flex: 6;
+  height: 90vh;
+  padding: 10px;
+  overflow-y: scroll;
 }
 .webvtt-player .point {
   padding: 5px;
