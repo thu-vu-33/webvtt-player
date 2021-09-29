@@ -19,7 +19,7 @@ class TranscriptLine extends React.Component {
 
   render() {
     // note: dangerouslySetInnerHTML is used because the text may contain HTML
-    console.log("#DEBUG value cue:", this.props.cue.text);
+
 
     let style = "";
     let style_line = "text";
@@ -45,6 +45,7 @@ class TranscriptLine extends React.Component {
       style_line = "text-hover";
     }
     const [en, vi] = this.props.cue.text.split("|");
+    console.log("#DEBUG value cue en:", en, " vi:", vi);
     return (
       <Popup
         trigger={
